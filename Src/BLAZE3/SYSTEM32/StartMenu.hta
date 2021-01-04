@@ -1,0 +1,86 @@
+<html><head><title>Blaze Start Menu</title> 
+<hta:application id="oBVC" 
+applicationname="BLOOT CUSTOM IDE"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+InnerBorder = 'No'
+MaximizeButton = 'No'
+MinimizeButton = 'No'
+Navigable = 'No'
+Scroll = 'No'
+ScrollFlat = 'No'
+Selection = 'No'
+Border = 'none'
+</head><body scroll="no"> 
+
+	<script language="vbscript">
+	Sub GetUserName()
+		Set WshNetwork = CreateObject("WScript.Network")
+		'Now simply grab the user's windows loginID and save to variable GetUser to use later in pasting
+		Dim GetUser
+		GetUser = WshNetwork.UserName 
+		Set WshNetwork = Nothing
+		user.innerHTML = "<p>" & GetUser & "</p>"
+	End Sub
+	</script>
+
+
+<style type="text/css">
+    body { 
+     background: url(\BLAZE3\Resources\StartBack.jpg); 
+	 background-size: 100% auto;
+	 background-repeat: no-repeat ;
+   }
+   h1 {
+    margin-top: 0;
+}
+</style>
+
+<font face="Lucida Console" size="4" color="white"> 
+
+
+<div class="content">
+
+</div>
+
+
+<div id="example1" class="vertical-menu">
+	<div id="user">
+    <script Language="VBScript">
+        GetUserName()
+    </script>
+	</div>
+	  <INPUT style="height:22px;width:200px" VALUE="Open Apps " type="button" NAME="OpenApps" href="#" class="active"></INPUT>
+  <INPUT style="height:22px;width:200px" VALUE="Close Menu" type="button" NAME="CloseButton" href="#" class="active"></INPUT>
+  <INPUT style="height:22px;width:200px" VALUE="Close Menu" type="button" NAME="CloseButton" href="#" class="active"></INPUT>
+  <INPUT style="height:22px;width:200px" VALUE="Close Menu" type="button" NAME="CloseButton" href="#" class="active"></INPUT>
+  <form action="https://duckduckgo.com/?q=" target="_blank">
+    <input placeholder="Search DuckDuckGo" name="q">     
+    <input type="submit" value=" Go ">
+   </form>
+</div>
+
+<SCRIPT FOR="CloseButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+window.close
+</SCRIPT>
+
+<SCRIPT FOR="OpenApps" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "\BLAZE3\SYSTEM32\AppMenu.hta ''"
+</SCRIPT>
+
+
+
+<script language="VBScript">
+    window.resizeTo 220,200
+    WindowTop  = (window.screen.availHeight - 201)
+    window.moveTo WindowLeft, WindowTop
+</script>
+</font> 
+</body>
+  
+</html> 

@@ -1,0 +1,41 @@
+<HTML> 
+<HEAD> 
+  <TITLE>HTA Clock</TITLE> 
+   
+    <HTA:APPLICATION ID="objMyClock" 
+     APPLICATIONNAME="My Clock" 
+     BORDER="none" 
+     BORDERSTYLE="normal" 
+     CAPTION="no" 
+     ICON="" 
+     MAXIMIZEBUTTON="no" 
+     MINIMIZEBUTTON="no" 
+     SINGLEINSTANCE="yes" 
+     SYSMENU="yes" 
+	 InnerBorder = 'No'
+     SCROLL="no" 
+     VERSION="1.0" 
+     WINDOWSTATE="normal"/> 
+ 
+  <Script Language="VBScript"> 
+   
+  Sub Window_OnLoad 
+window.resizeTo 160,20 
+window.moveTo 900,0 
+myVBSClock 
+        iTimerID = window.setInterval("myVBSClock", 1200) 
+    End Sub 
+     
+   Sub myVBSClock 
+     myClock.innerText = now() 
+ end sub 
+  
+  </SCRIPT> 
+   
+</HEAD> 
+<BODY SCROLL="no" topmargin="0" rightmargin="0" leftmargin="0" bgcolor="#000000"> 
+<height> 
+<font color="#00FF00"><b> 
+  <PRE ID=myClock>  </PRE></b></font> 
+</BODY> 
+</HTML> 

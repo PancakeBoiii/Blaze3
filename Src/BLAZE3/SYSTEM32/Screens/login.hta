@@ -1,0 +1,52 @@
+<html><head><title>Microsoft Windows</title> 
+ 
+<hta:application id="oBVC" 
+applicationname="RSOD"  
+version="1.0" 
+Selection = 'No'
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+InnerBorder = 'No'
+windowstate="maximize"/> 
+</head><body bgcolor="#000000" scroll="no"> 
+<font face="Lucida Console" size="4" color="white"> 
+
+	<script language="vbscript">
+	Sub GetUserName()
+		Set WshNetwork = CreateObject("WScript.Network")
+		'Now simply grab the user's windows loginID and save to variable GetUser to use later in pasting
+		Dim GetUser
+		GetUser = WshNetwork.UserName 
+		Set WshNetwork = Nothing
+		user.innerHTML = "<p>" & GetUser & "</p>"
+	End Sub
+	</script>
+<table width=100% height=100%> 
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">
+            <img width="200" height="200" src="\BLAZE3\SYSTEM32\Screens\user.png" />
+			<br>
+	<font face="Lucida Console" size="4" color="white">	<div id="user">
+    <script Language="VBScript">
+        GetUserName()
+    </script>
+	</div></font> 
+	  <form action="window.close();" target="_blank">
+    <input placeholder="Password" name="q">     
+   </form>
+        </td>
+    </tr>
+</table>
+<style>
+body {
+ background-image: url('\BLAZE3\SYSTEM32\Screens\images.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+</style>
+
+</font> 
+</body>
+</html>

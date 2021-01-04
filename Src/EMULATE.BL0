@@ -1,0 +1,6 @@
+@echo off
+color f4
+title BLAZE3 Startup
+cls
+start \BLAZE3\launchGUI.bat >NUL
+exit

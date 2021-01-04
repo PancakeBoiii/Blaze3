@@ -1,0 +1,77 @@
+<html><head><title>BLOOT INTERFACE</title> 
+<style type="text/css">
+body{
+	background-image:url(\BLAZE3\Resources\taskbarback.PNG);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.content{
+	background: white;
+	width: 50%;
+	padding: 40px;
+	margin: 100px auto;
+}
+</style>
+<hta:application id="oBVC" 
+applicationname="BLOOT CUSTOM IDE"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+InnerBorder = 'No'
+MaximizeButton = 'No'
+MinimizeButton = 'No'
+Navigable = 'No'
+Scroll = 'No'
+ScrollFlat = 'No'
+Selection = 'No'
+Border = 'none'
+</head><body scroll="no"> 
+<font face="Lucida Console" size="4" color="white"> 
+
+
+<div class="content">
+
+</div>
+
+<INPUT  type="image" style="width:40px;height:40px;" src="\BLAZE3\Resources\LogoStart.png" NAME="StartButton" VALUE="Click" alt="Applications">
+<SCRIPT FOR="StartButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "\BLAZE3\SYSTEM32\StartMenu.hta ''"
+</SCRIPT>
+
+<INPUT  type="image" src="\BLAZE3\Resources\file.ico" style="width:40px;height:40px;" NAME="FileButton" VALUE="Click" alt="File Manager">
+<SCRIPT FOR="FileButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "\BLAZE3\SYSTEM32\deskOpen.bat ''"
+</SCRIPT>
+
+<INPUT  type="image" src="\BLAZE3\Resources\console.png" style="width:40px;height:40px;" NAME="ConsoleButton" VALUE="Click" alt="CMD">
+<SCRIPT FOR="ConsoleButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "\BLAZE3\SYSTEM32\BlazePrompt.bat ''"
+</SCRIPT>
+
+<INPUT  type="image" src="\BLAZE3\Resources\win.png" style="width:40px;height:40px;" NAME="WindowsButton" VALUE="Click" alt="RETURN TO WINDOWS">
+<SCRIPT FOR="WindowsButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "\BLAZE3\SYSTEM32\WINGUI.bat ''"
+</SCRIPT>
+
+
+<INPUT  type="image" src="\BLAZE3\Resources\STORE.png" style="width:50px;height:40px;" NAME="StoreButton" VALUE="Click" alt="Bl00t Commands Help Sheet"s>
+<SCRIPT FOR="StoreButton" EVENT="onClick" LANGUAGE="VBScript">
+Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run "http://horizongames.ml/bloot/store/main/ ''"
+</SCRIPT>
+
+<script language="VBScript">
+    window.resizeTo 4000,40
+    WindowTop  = (window.screen.availHeight - 0)
+    window.moveTo WindowLeft, WindowTop
+</script>
+</font> 
+</body>
+  
+</html> 

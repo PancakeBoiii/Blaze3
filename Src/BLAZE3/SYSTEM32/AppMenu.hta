@@ -1,0 +1,97 @@
+<HTML>
+<TITLE>Applications</TITLE>
+ <HTA:APPLICATION APPLICATIONNAME="Applications" MinimizeButton = 'no' MaximizeButton = 'no' SCROLL="no" SINGLEINSTANCE="yes" WINDOWSTATE="normal">
+<HEAD>
+
+<style type="text/css">
+body{
+	background-image:url(\BLAZE3\Resources\AppBack.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.content{
+	background: white;
+	width: 50%;
+	padding: 40px;
+	margin: 100px auto;
+}
+</style>
+
+</HEAD>
+<BODY bgcolor="#a60507">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-jpc1{font-size:10px;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><font face="Lucida Console" size="7" color="white"><br /><p>BLAZE3 APPLICATIONS</p></font><center>
+<center><table class="tg">
+  <tr>
+  <center><font face="Lucida Console" size="3" color="white"><br /><p>TOOLS</p></font><center>
+    <th class="tg-jpc1">
+		<center><INPUT  type="image" src="\BLAZE3\Resources\anti.png" style="width:45px;height:45px;" NAME="AntiButton" VALUE="Click"><center>
+		<SCRIPT FOR="AntiButton" EVENT="onClick" LANGUAGE="VBScript">
+		Set WshShell = CreateObject("WScript.Shell")
+		WshShell.Run "\BLAZE3\SYSTEM32\UTILITIES\GRIDD.bat ''"
+		</SCRIPT>
+		<center><font face="Lucida Console" size="4" color="white"><br /><p>GRIDD</p></font><center>
+	</th>
+    <th class="tg-0lax">
+		<center><INPUT  type="image" src="\BLAZE3\Resources\prism.png" style="width:45px;height:45px;" NAME="BlootcrashButton" VALUE="Click"><center>
+		<SCRIPT FOR="BlootcrashButton" EVENT="onClick" LANGUAGE="VBScript">
+		Set WshShell = CreateObject("WScript.Shell")
+		WshShell.Run "\BLAZE3\SYSTEM32\UTILITIES\PRISM.bat ''"
+		</SCRIPT>
+		<center><font face="Lucida Console" size="4" color="white"><br /><p>PRISM</p></font><center>
+	    <th class="tg-0lax">
+		<center><INPUT  type="image" src="\BLAZE3\Resources\steal.png" style="width:45px;height:45px;" NAME="BlootSTEALButton" VALUE="Click"><center>
+		<SCRIPT FOR="BlootSTEALButton" EVENT="onClick" LANGUAGE="VBScript">
+		Set WshShell = CreateObject("WScript.Shell")
+		WshShell.Run "\BLAZE3\SYSTEM32\UTILITIES\CpF.BAT ''"
+		</SCRIPT>
+		<center><font face="Lucida Console" size="4" color="white"><br /><p>DOC BAK</p></font><center>
+	</th>
+</tr>
+  </table>
+  <center><font face="Lucida Console" size="3" color="white"><br /><p>UTILITIES</p></font><center>
+  <table>
+  <tr>
+    <td class="tg-0lax">
+		<center><INPUT  type="image" src="\BLAZE3\Resources\elai.png" style="width:45px;height:45px;" NAME="BlootcrashstealUniversalButton" VALUE="Click"><center>
+		<SCRIPT FOR="BlootcrashstealUniversalButton" EVENT="onClick" LANGUAGE="VBScript">
+		Set WshShell = CreateObject("WScript.Shell")
+		WshShell.Run "\BLAZE3\SYSTEM32\Elai.bat ''"
+		</SCRIPT
+		<center><font face="Lucida Console" size="4" color="white"><br /><p>E.L.A.I</p></font><center>
+	</td>
+    <td class="tg-0lax">
+		<center><INPUT  type="image" src="\BLAZE3\Resources\Disc.png" style="width:45px;height:45px;" NAME="BlootstartupButton" VALUE="Click"><center>
+		<SCRIPT FOR="BlootstartupButton" EVENT="onClick" LANGUAGE="VBScript">
+		Set WshShell = CreateObject("WScript.Shell")
+		WshShell.Run "shell:startup ''"
+		</SCRIPT
+		<center><font face="Lucida Console" size="4" color="white"><br /><p>Startup</p></font><center>
+	</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table></center>
+
+</BODY>
+</HTML>
